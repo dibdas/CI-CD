@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest # github will run bring up their own and runs on it 
 
     steps:
-    - name: Checkout code #clone the code on the ubuntu machine 
+    - name: Checkout code #clone the code on the ubuntu machine of the github server
       uses: actions/checkout@v2
 
     - name: SSH and deploy
