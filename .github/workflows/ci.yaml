@@ -23,7 +23,7 @@ jobs:
         chmod 600 keyfile
          mkdir -p ~/.ssh
         cp known_hosts ~/.ssh/known_hosts
-        ssh -t -i keyfile ubuntu@ec2-15-206-90-146.ap-south-1.compute.amazonaws.com "sudo bash ~/deploy.sh"
+        ssh -t -i keyfile ubuntu@ec2-15-206-90-146.ap-south-1.compute.amazonaws.com "sudo -E bash ~/deploy.sh"
 
 
  #echo "$SSH_PRIVATE_KEY" > keyfile # take that env variable and put it into a file 
